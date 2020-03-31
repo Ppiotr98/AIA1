@@ -135,6 +135,12 @@ footer {
         }
 
         main {
+            article {
+                width: normal;
+            }
+            .article2, .article3 {
+                flex: 1;
+            }
             flex-wrap: wrap;
         }
     }
@@ -161,6 +167,11 @@ footer {
     }
 
     main {
-        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: $standard-gap-size * 2;
+        article {
+            width: 100%;
+        }
     }
+    
 }

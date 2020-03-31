@@ -97,7 +97,11 @@ footer {
     align-self: flex-start;
     justify-content: flex-end; }
   .content main {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+    .content main article {
+      width: normal; }
+    .content main .article2, .content main .article3 {
+      flex: 1; } }
 @media all and (max-width: 600px) {
   header {
     justify-content: space-between; }
@@ -112,6 +116,9 @@ footer {
       justify-content: flex-end; }
 
   main {
-    flex-wrap: wrap; } }
+    flex-direction: column;
+    margin-right: 30px; }
+    main article {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
